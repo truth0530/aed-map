@@ -1,187 +1,197 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>AED 현황 대시보드 홈</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #007bff;
-            --primary-dark: #0056b3;
-            --success-color: #28a745;
-            --success-dark: #218838;
-            --gradient-start: #4facfe;
-            --gradient-end: #00f2fe;
-        }
+<!DOCTYPE HTML>
+<!--
+	이광성 작업 중
+-->
+<html>
+	<head>
+		<title>AED 현황 대시보드</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="homepage">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+	<!-- Header -->
+		<div id="header">
+			<div class="container">
+					
+				<!-- Logo -->
+					<div id="logo">
+						<h1><a href="#">자동심장충격기 현황 대시보드</a></h1>
+						<span>9개지역 응급의료지원센터</span>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="active"><a href="index.html">홈</a></li>
+							<li><a href="latest_seoul.html">서울특별시</a></li>
+							<li><a href="latest_daegu.html">대구광역시</a></li>
+							<li><a href="latest_incheon.html">인천광역시</a></li>
+							<li><a href="latest_sejong.html">세종특별자치시</a></li>
+							<li><a href="latest_daejeon.html">대전광역시</a></li>
+							<li><a href="latest_ulsan.html">울산광역시</a></li>
+							<li><a href="latest_chungnam.html">충청남도</a></li>
+							<li><a href="latest_chungbuk.html">충청북도</a></li>
+							<li><a href="latest_jeju.html">제주특별자치도</a></li>
+							<li><a href="latest_summary_report.html">종합 보고서</a></li>
+						</ul>
+					</nav>
 
-        body {
-            font-family: "Noto Sans KR", sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
+			</div>
+		</div>
+	<!-- Header -->
+			
+	<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<header>
+					<h2>9개 지역 응급의료지원센터 AED 현황</h2>
+				</header>
+				<div class="row">
+					<div class="3u">
+						<section>
+							<a href="latest_seoul.html" class="image full"><img src="images/pics01.jpg" alt="서울특별시" /></a>
+							<p>서울특별시의 AED 설치 현황과 통계를 확인하세요.</p>
+							<a href="latest_seoul.html" class="button">자세히 보기</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<a href="latest_daegu.html" class="image full"><img src="images/pics11.jpg" alt="대구광역시" /></a>
+							<p>대구광역시의 AED 설치 현황과 통계를 확인하세요.</p>
+							<a href="latest_daegu.html" class="button">자세히 보기</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<a href="latest_incheon.html" class="image full"><img src="images/pics12.jpg" alt="인천광역시" /></a>
+							<p>인천광역시의 AED 설치 현황과 통계를 확인하세요.</p>
+							<a href="latest_incheon.html" class="button">자세히 보기</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<a href="latest_sejong.html" class="image full"><img src="images/pics13.jpg" alt="세종특별자치시" /></a>
+							<p>세종특별자치시의 AED 설치 현황과 통계를 확인하세요.</p>
+							<a href="latest_sejong.html" class="button">자세히 보기</a>
+						</section>
+					</div>
+				</div>
+				<div class="divider">&nbsp;</div>
+				<div class="row">
+					<div class="8u skel-cell-important">
+						<section id="content">
+							<header>
+								<h2>전국 AED 현황 대시보드</h2>
+								<span class="byline">9개 지역 응급의료지원센터의 AED 설치 현황을 한눈에 확인하세요</span>
+							</header>
+							<p><a href="latest_summary_report.html" class="image full"><img src="images/pics02.jpg" alt="종합 보고서"></a></p>
+							<p>이 대시보드는 전국 9개 지역의 AED 설치 현황을 실시간으로 모니터링하고 분석합니다. 각 지역별 상세 정보와 통계를 확인하실 수 있으며, 종합 보고서를 통해 전체적인 현황을 파악하실 수 있습니다.</p>
+							<a href="latest_summary_report.html" class="button">종합 보고서 보기</a>
+						</section>
+					</div>
+					<div id="sidebar" class="4u">
+						<section>
+							<header>
+								<h2>지역별 현황</h2>
+								<span class="byline">각 지역의 AED 설치 현황</span>
+							</header>
+							<p>아래 링크를 통해 각 지역의 상세 현황을 확인하실 수 있습니다.</p>
+							<ul class="default">
+								<li><a href="latest_daejeon.html">대전광역시 AED 현황</a></li>
+								<li><a href="latest_ulsan.html">울산광역시 AED 현황</a></li>
+								<li><a href="latest_chungnam.html">충청남도 AED 현황</a></li>
+								<li><a href="latest_chungbuk.html">충청북도 AED 현황</a></li>
+								<li><a href="latest_jeju.html">제주특별자치도 AED 현황</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	<!-- Main -->
 
-        .container {
-            max-width: 1000px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            transform: translateY(0);
-            transition: transform 0.3s ease;
-        }
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="3u">
+						<section>
+							<ul class="style1">
+								<li><img src="images/pics05.jpg" width="78" height="78" alt="">
+									<p>Nullam non wisi a sem eleifend. Donec mattis libero eget urna. </p>
+									<p class="posted">August 11, 2014  |  (10 )  Comments</p>
+								</li>
+								<li><img src="images/pics06.jpg" width="78" height="78" alt="">
+									<p>Nullam non wisi a sem eleifend. Donec mattis libero eget urna. </p>
+									<p class="posted">August 11, 2014  |  (10 )  Comments</p>
+								</li>
+								<li><img src="images/pics07.jpg" width="78" height="78" alt="">
+									<p>Nullam non wisi a sem eleifend. Donec mattis libero eget urna. </p>
+									<p class="posted">August 11, 2014  |  (10 )  Comments</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<ul class="style1">
+								<li class="first"><img src="images/pics08.jpg" width="78" height="78" alt="">
+									<p>Nullam non wisi a sem eleifend. Donec mattis libero eget urna. </p>
+									<p class="posted">August 11, 2014  |  (10 )  Comments</p>
+								</li>
+								<li><img src="images/pics09.jpg" width="78" height="78" alt="">
+									<p>Nullam non wisi a sem eleifend. Donec mattis libero eget urna. </p>
+									<p class="posted">August 11, 2014  |  (10 )  Comments</p>
+								</li>
+								<li><img src="images/pics10.jpg" width="78" height="78" alt="">
+									<p>Nullam non wisi a sem eleifend. Donec mattis libero eget urna. </p>
+									<p class="posted">August 11, 2014  |  (10 )  Comments</p>
+								</li>
+							</ul>
+						</section>				
+					</div>
+					<div class="6u">
+						<section>
+							<header>
+								<h2>Aenean elementum</h2>
+							</header>
+							<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus.</p>
+							<ul class="default">
+								<li><a href="#">Pellentesque quis lectus gravida blandit.</a></li>
+								<li><a href="#">Lorem ipsum consectetuer adipiscing elit.</a></li>
+								<li><a href="#">Phasellus nec nibh pellentesque congue.</a></li>
+								<li><a href="#">Cras aliquam risus pellentesque pharetra.</a></li>
+								<li><a href="#">Duis non metus commodo euismod lobortis.</a></li>
+								<li><a href="#">Lorem ipsum dolor adipiscing elit.</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Footer -->
 
-        .container:hover {
-            transform: translateY(-5px);
-        }
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+			</div>
+		</div>
 
-        h1 {
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-align: center;
-            background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: fadeIn 1s ease-out;
-        }
-
-        p {
-            color: #6c757d;
-            font-size: 1.1rem;
-            text-align: center;
-            margin-bottom: 2rem;
-            animation: slideUp 1s ease-out;
-        }
-
-        .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-            background: linear-gradient(45deg, var(--primary-color), var(--gradient-end));
-            color: white;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
-        }
-
-        a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
-        }
-
-        a:active {
-            transform: translateY(1px);
-        }
-
-        a::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-                120deg,
-                transparent,
-                rgba(255, 255, 255, 0.2),
-                transparent
-            );
-            transition: 0.5s;
-        }
-
-        a:hover::before {
-            left: 100%;
-        }
-
-        a.summary-link {
-            grid-column: 1/-1;
-            background: linear-gradient(45deg, var(--success-color), #20c997);
-            font-size: 1.2rem;
-            padding: 20px;
-            margin-top: 10px;
-        }
-
-        a.summary-link:hover {
-            background: linear-gradient(45deg, var(--success-dark), #1ba87e);
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .links-grid {
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-                gap: 15px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>AED 지역별 현황 대시보드</h1>
-        <p>아래 링크를 클릭하여 각 지역의 상세 지도 또는 종합 보고서를 확인하세요.</p>
-        <div class="links-grid">
-            <a href="latest_seoul.html">서울특별시</a>
-            <a href="latest_daegu.html">대구광역시</a>
-            <a href="latest_incheon.html">인천광역시</a>
-            <a href="latest_sejong.html">세종특별자치시</a>
-            <a href="latest_daejeon.html">대전광역시</a>
-            <a href="latest_ulsan.html">울산광역시</a>
-            <a href="latest_chungnam.html">충청남도</a>
-            <a href="latest_chungbuk.html">충청북도</a>
-            <a href="latest_jeju.html">제주특별자치도</a>
-            <a href="latest_summary_report.html" class="summary-link">9개 지역 종합 보고서 보기</a>
-        </div>
-    </div>
-</body>
+	</body>
 </html>
